@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.webatron.rakesh.phoneauthentication.ReadDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:fontFamily="@font/ubuntumedium"
+        android:textSize="40sp"
+        android:id="@+id/welcome"
+        android:textAlignment="center"
+        android:textColor="#ffffff"/>
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:fontFamily="@font/ubunturegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:hint="number"
+        android:id="@+id/dnumber"/>
+
+    <EditText
+        android:fontFamily="@font/ubunturegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_margin="10dp"
+        android:textColorHint="#747474"
+        android:layout_centerInParent="true"
+        android:id="@+id/username"
+        android:background="@drawable/phonenumber"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/leavebtn"
+        android:textColor="@color/colorPrimary"
+        android:text="Next"
+        android:id="@+id/next"/>
+</RelativeLayout>

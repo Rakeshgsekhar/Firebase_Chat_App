@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="10dp"
+    tools:context="com.webatron.rakesh.phoneauthentication.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:fontFamily="@font/ubunturegular"
+        android:background="@drawable/phonenumber"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ubuntumedium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_centerHorizontal="true"
+        android:text="Verify"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/mainsignuptext"
+        android:id="@+id/verify"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verify"
+        android:visibility="gone"
+        android:padding="10dp">
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_width="200dp"
+            android:fontFamily="@font/ubunturegular"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/phonenumber"
+            android:padding="10dp"
+            android:hint="Verification Code"
+            android:id="@+id/verificationcode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/OK"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/mainsignuptext"
+            android:text="Confirm"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:fontFamily="@font/ubuntumedium"
+        android:background="@drawable/mainsignuptext"
+        android:text="Already a member?"
+        android:padding="10dp"
+        android:id="@+id/siginbtn"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressbar"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

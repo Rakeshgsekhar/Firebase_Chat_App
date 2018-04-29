@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webatron.rakesh.phoneauthentication.GroupChat">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grpmsglist"
+        android:dividerHeight="0dp"
+        android:background="#fcfcfc"
+        android:stackFromBottom="true"
+        android:layout_above="@+id/grpform">
+
+    </ListView>
+    <LinearLayout
+        android:id="@+id/grpform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <EditText
+            android:id="@+id/grpsndmsg"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/grpsendbtn"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:hint="Message"
+            android:fontFamily="@font/ubunturegular"
+            android:inputType="textLongMessage"
+            android:maxHeight="80dp"/>
+        <ImageButton
+            android:id="@+id/grpsendbtn"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_send_black_24dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.webatron.rakesh.phoneauthentication.Login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/ubunturegular"
+        android:id="@+id/loginnumber"
+        android:hint="Registered Number"
+        android:background="@drawable/phonenumber"
+        android:padding="20dp"
+        android:inputType="phone"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/logincode"
+        android:inputType="number"
+        android:hint="CODE"
+        android:fontFamily="@font/ubunturegular"
+        android:background="@drawable/phonenumber"
+        android:padding="15dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logincode"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/lauchheading"
+        android:id="@+id/logincodeverify"
+        android:background="@drawable/mainsignuptext"
+        android:text="Verify"
+        android:visibility="invisible"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mainsignuptext"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:layout_marginBottom="10dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/userlogin"/>
+
+
+</RelativeLayout>
